@@ -1,0 +1,1 @@
+select u.id,u.name,count(o.id) as order_count from users u left join orders o on o.user_id=u.id where u.status='active' and u.created_at>='2025-01-01' group by u.id,u.name having count(o.id)>2 order by order_count desc limit 20;

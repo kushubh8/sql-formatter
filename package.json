@@ -1,0 +1,13 @@
+{
+  "name": "sql-formatter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A dependency-free SQL formatter technical exercise",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/*.test.js",
+    "format": "node dist/src/index.js"
+  },
+  "devDependencies": {},
+  "engines": { "node": ">=18" }
+}
